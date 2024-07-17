@@ -1,0 +1,33 @@
+.converter {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 1px lightgray solid;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 0;
+  padding-right: 0;
+  display: flex;
+  min-width: 180px;
+  @media screen and (max-width: 767px) {
+    display: unset;
+    padding-right: 10px;
+  }
+  &__label {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-right: 10px;
+    &--currency {
+      width: 100%;
+    }
+    &--input {
+      border-radius: 3px;
+      border: gray 1px solid;
+      display: block;
+      width: 100%;
+      &:focus {
+        outline: 0;
+        border: 1px #0084ff solid;
+      }
+    }
+  }
+}
